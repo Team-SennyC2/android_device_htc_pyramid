@@ -19,10 +19,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/pyramid/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    device/htc/pyramid/overlay
 
 # GPS
-PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/gps.conf
+PRODUCT_COPY_FILES += \
+    device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
+
 PRODUCT_PACKAGES += \
     gps.pyramid
 
@@ -60,7 +63,8 @@ PRODUCT_COPY_FILES += \
     device/htc/pyramid/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
 
 # HTC BT Audio tune
-PRODUCT_COPY_FILES += device/htc/pyramid/dsp/AudioBTID.csv:system/etc/AudioBTID.csv
+PRODUCT_COPY_FILES += \
+    device/htc/pyramid/dsp/AudioBTID.csv:system/etc/AudioBTID.csv
 
 # Sound configs
 PRODUCT_COPY_FILES += \
@@ -143,11 +147,7 @@ PRODUCT_PACKAGES += \
     audio_policy.conf \
     libaudioutils \
     libaudio-resampler \
-    audio.usb.default \
-
-# GPS
-PRODUCT_COPY_FILES += \
-    device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
+    audio.usb.default
 
 # Graphics
 PRODUCT_PACKAGES += \

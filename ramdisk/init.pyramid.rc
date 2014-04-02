@@ -125,6 +125,10 @@ on boot
     # audio
     mkdir /data/audio 2770 media audio
 
+    # camera
+    chown system camera /sys/camera_htccallback/htccallback
+    chmod 0660 /sys/camera_htccallback/htccallback
+
     # radio
     mkdir /data/radio 2770 radio radio
     mkdir /dev/radio 0770 radio radio
