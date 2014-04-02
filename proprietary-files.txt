@@ -1,3 +1,18 @@
+# Configuration files
+etc/agps_rm
+etc/vpimg
+
+# Executable files
+bin/charging
+bin/htcbatt
+bin/ipd
+bin/mpdecision
+bin/netmgrd
+bin/netsharing
+bin/qmuxd
+bin/rmt_storage
+bin/thermald
+
 # Audio
 lib/libacdbloader.so
 lib/libacdbmapper.so
@@ -5,48 +20,46 @@ lib/libaudcal.so
 lib/libaudioalsa.so
 lib/libhtc_acoustic.so
 
-# Binaries
-bin/cand
-bin/charging
-bin/htcbatt
-bin/mm-qcamera-daemon
-bin/mpdecision
-bin/netmgrd
-bin/netsharing
-bin/qmuxd
-bin/rmt_storage
-bin/thermald
-bin/zchgd
-
 # Camera
-bin/awb_camera
+lib/hw/camera.vendor.msm8660.so
+lib/libBeautyChat.so
+lib/libcam_oem_plugin.so
+lib/libcameraasd.so
 lib/libcameraface.so
 lib/libcamerapp.so
-lib/libcam_oem_plugin.so
-lib/libDxOAF.so
 lib/libgemini.so
+lib/libHTC_DIS.so
+lib/libhtccamera.so
+lib/libimage-jpeg-dec-omx-comp.so
+lib/libimage-jpeg-enc-omx-comp.so
+lib/libimage-omx-common.so
+lib/libmm-abl.so
+lib/libmm-abl-oem.so
+lib/libmmcamera_faceproc.so
 lib/libmmcamera_frameproc.so
+lib/libmmcamera_hdr_lib.so
+lib/libmmcamera_image_stab.so
+lib/libmmcamera_interface2.so
 lib/libmmcamera_rawchipproc.so
-lib/libmmcamera_statsproc30.so
+lib/libmmcamera_statsproc31.so
+lib/libmmcamera_wavelet_lib.so
 lib/libmmipl.so
 lib/libmmjpeg.so
 lib/libmmmpo.so
-lib/libmmstereo.so
+lib/libmmmpod.so
+lib/libmm-omxcore.so
+lib/libmmstillomx.so
 lib/liboemcamera.so
-lib/libOlaEngine.so
 lib/libposteffect.so
+lib/libqcomomxsample_jb.so
+bin/mm-qcamera-daemon
 
 # Chromatix
-lib/libchromatix_s5k3h2yx_default_video.so
-lib/libchromatix_s5k3h2yx_hdr.so
-lib/libchromatix_s5k3h2yx_hfr.so
-lib/libchromatix_s5k3h2yx_preview.so
-lib/libchromatix_s5k3h2yx_zsl.so
-
-# Firmware
-etc/firmware/leia_pm4_470.fw
-etc/firmware/leia_pfp_470.fw
-etc/firmware/vidc_1080p.fw
+lib/libchromatix_s5k3h1gx_default_video.so
+lib/libchromatix_s5k3h1gx_hdr.so
+lib/libchromatix_s5k3h1gx_hfr.so
+lib/libchromatix_s5k3h1gx_preview.so
+lib/libchromatix_s5k3h1gx_zsl.so
 
 # Graphics
 lib/egl/eglsubAndroid.so
@@ -54,36 +67,45 @@ lib/egl/libEGL_adreno200.so
 lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libq3dtools_adreno200.so
+lib/egl/libplayback_adreno200.so
 lib/libC2D2.so
 lib/libc2d2_z180.so
 lib/libgsl.so
+lib/libOpenCL.so
 lib/libOpenVG.so
 lib/libsc-a2xx.so
 
-# GPS
-lib/hw/gps.default.so
-
-# Media
+# Misc libraries
 lib/libmm-color-convertor.so
 
 # Radio
 lib/libdiag.so
+lib/libidl.so
 lib/libdll.so
 lib/libdsi_netctrl.so
 lib/libdsutils.so
 lib/libhtc_ril.so
-lib/libidl.so
 lib/libnetmgr.so
-lib/libqc-opt.so
 lib/libqdp.so
+lib/libqmiservices.so
 lib/libqmi.so
 
 # Sensors
-lib/hw/sensors.villec2.so
+lib/hw/sensors.pyramid.so
 lib/libmllite.so
 lib/libmlplatform.so
 lib/libmpl_jni.so
 lib/libmpl.so
 
-# Webkit
-lib/libv8.so
+# Wifi
+etc/firmware/fw_bcmdhd.bin
+etc/firmware/fw_bcmdhd_apsta.bin
+etc/firmware/fw_bcmdhd_p2p.bin
+
+# Video Firmwares
+etc/firmware/a225p5_pm4.fw
+etc/firmware/a225_pfp.fw
+etc/firmware/a225_pm4.fw
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/vidc_1080p.fw

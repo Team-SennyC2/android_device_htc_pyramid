@@ -5,3 +5,7 @@ type qmux_gps_socket, file_type;
 type qmux_radio_socket, file_type;
 
 type audio_firmware_file, file_type;
+
+allow efs_file rootfs:filesystem associate;
+allow cache_file rootfs:filesystem associate;
+allow asec_apk_file rootfs:filesystem associate;

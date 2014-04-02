@@ -15,6 +15,6 @@
 -->
 
 <resources>
-    <!-- Volume Rocker Wake Support -->
-    <bool name="config_show_volumeRockerWake">true</bool>
+    <!-- LED Flashlight -->
+    <!-- <bool name="has_led_flash">true</bool> -->
 </resources>
